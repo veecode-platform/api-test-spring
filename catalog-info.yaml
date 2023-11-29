@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api-test-spring
+  description: "api-test-spring"
+  annotations:
+    github.com/project-slug: veecode-platform/api-test-spring
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "api-test-spring"
+    vault.io/secrets-path: "api-test-spring"
+    grafana/tag-selector: "api-test-spring"
+    grafana/alert-label-selector: "alertname=api-test-spring"
+    argocd/proxy-url: '/argocd/api'
+    argocd/app-name: "api-test-spring"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/admin"
+
+
+

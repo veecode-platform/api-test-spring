@@ -1,0 +1,8 @@
+project:
+  name: api-test-spring
+  description: api-test-spring
+  java:
+    package: codes.platform.demo
+  language: java
+  framework: springboot
+  applicationPort: 8080
